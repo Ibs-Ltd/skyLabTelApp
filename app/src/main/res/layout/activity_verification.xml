@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.activities.VerificationActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="60dp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et1"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:hint="@string/star"
+                android:textStyle="bold"
+                android:textColorHint="@color/colorTextHint"
+                android:textColor="@color/colorText"
+                android:background="@drawable/background_otp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:maxLength="1"
+                android:hint="@string/star"
+                android:textStyle="bold"
+                android:textColorHint="@color/colorTextHint"
+                android:textColor="@color/colorText"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:background="@drawable/background_otp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:maxLength="1"
+                android:hint="@string/star"
+                android:textStyle="bold"
+                android:textColorHint="@color/colorTextHint"
+                android:textColor="@color/colorText"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:background="@drawable/background_otp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="0dp" />
+
+            <EditText
+                android:id="@+id/et4"
+                android:maxLength="1"
+                android:hint="@string/star"
+                android:textStyle="bold"
+                android:textColorHint="@color/colorTextHint"
+                android:textColor="@color/colorText"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:background="@drawable/background_otp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="Verification"
+            android:textAllCaps="true"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:text="@string/enter_the_verification_code_we_just_sent_you_on_your_emailaddress"
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorText"
+                android:text="@string/cancel"
+                android:id="@+id/tv_cancel_btn"
+                android:padding="15dp"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/border_right_corner"
+                android:layout_gravity="start|center_horizontal"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorText"
+                android:text="@string/verify"
+                android:id="@+id/tv_continue_btn"
+                android:padding="15dp"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/border_left_corner"
+                android:layout_gravity="end|center_horizontal"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

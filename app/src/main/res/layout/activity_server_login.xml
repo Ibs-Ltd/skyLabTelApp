@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorBackground"
+    tools:context=".ui.activities.ServerLoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:text="@string/assistant_generic_account"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:text="@string/assistant_login_desc"
+                android:textAllCaps="true"
+                android:id="@+id/forgot_btn"
+                android:textSize="12sp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/assistant_username"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorTextHint"
+                    android:backgroundTint="@color/colorBackground"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/assistant_password"
+                    android:hint="@string/password"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorTextHint"
+                    android:backgroundTint="@color/colorBackground"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/assistant_domain"
+                    android:hint="@string/domain"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorTextHint"
+                    android:backgroundTint="@color/colorBackground"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/assistant_display_name"
+                    android:hint="@string/assistant_display_name_optional"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorTextHint"
+                    android:backgroundTint="@color/colorBackground"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/assistant_transports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/transport_udp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:buttonTint="@color/colorBtnText"
+                    android:textColor="@color/colorText"
+                    android:text="@string/pref_transport_udp" />
+
+                <RadioButton
+                    android:id="@+id/transport_tcp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:buttonTint="@color/colorBtnText"
+                    android:textColor="@color/colorText"
+                    android:text="@string/pref_transport_tcp" />
+
+                <RadioButton
+                    android:id="@+id/transport_tls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorText"
+                    android:checked="true"
+                    android:buttonTint="@color/colorBtnText"
+                    android:text="@string/pref_transport_tls" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:text="Server Login"
+                android:id="@+id/assistant_login"
+                android:padding="15dp"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/border_left_corner"
+                android:layout_gravity="end|center_horizontal"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

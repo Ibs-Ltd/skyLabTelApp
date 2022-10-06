@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit1"
+            android:background="@drawable/numpad_one"
+            android:backgroundTint="@color/colorBtnText"
+            style="@style/DialerDigit"
+            android:soundEffectsEnabled="true"
+            android:text="1" />
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit2"
+            android:background="@drawable/numpad_two"
+            android:backgroundTint="@color/colorBtnText"
+            android:soundEffectsEnabled="true"
+
+            style="@style/DialerDigit"
+            android:text="2" />
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit3"
+            android:background="@drawable/numpad_three"
+            android:backgroundTint="@color/colorBtnText"
+            android:soundEffectsEnabled="true"
+            style="@style/DialerDigit"
+            android:text="3" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit4"
+            android:background="@drawable/numpad_four"
+            android:backgroundTint="@color/colorBtnText"
+            style="@style/DialerDigit"
+            android:soundEffectsEnabled="true"
+            android:text="4" />
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit5"
+            android:background="@drawable/numpad_five"
+            android:backgroundTint="@color/colorBtnText"
+            style="@style/DialerDigit"
+            android:soundEffectsEnabled="true"
+            android:text="5" />
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit6"
+            android:background="@drawable/numpad_six"
+            android:backgroundTint="@color/colorBtnText"
+            style="@style/DialerDigit"
+            android:soundEffectsEnabled="true"
+            android:text="6" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit7"
+            android:background="@drawable/numpad_seven"
+            android:backgroundTint="@color/colorBtnText"
+            style="@style/DialerDigit"
+            android:soundEffectsEnabled="true"
+            android:text="7" />
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit8"
+            android:background="@drawable/numpad_eight"
+            android:backgroundTint="@color/colorBtnText"
+            style="@style/DialerDigit"
+            android:soundEffectsEnabled="true"
+            android:text="8" />
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit9"
+            android:background="@drawable/numpad_nine"
+            android:backgroundTint="@color/colorBtnText"
+            style="@style/DialerDigit"
+            android:soundEffectsEnabled="true"
+            android:text="9" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/DigitStar"
+            android:background="@drawable/numpad_star_digit"
+            android:backgroundTint="@color/colorBtnText"
+            style="@style/DialerDigit"
+            android:soundEffectsEnabled="true"
+            android:text="*" />
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/Digit00"
+            android:backgroundTint="@color/colorBtnText"
+            android:background="@drawable/numpad_zero"
+            style="@style/DialerDigit"
+            android:soundEffectsEnabled="true"
+            android:text="0+" />
+
+        <tel.skylab.skylabtel.linphone.dialer.views.Digit
+            android:id="@+id/DigitHash"
+            style="@style/DialerDigit"
+            android:background="@drawable/numpad_sharp"
+            android:backgroundTint="@color/colorBtnText"
+            android:soundEffectsEnabled="true"
+            android:text="#" />
+
+    </TableRow>
+
+</TableLayout>

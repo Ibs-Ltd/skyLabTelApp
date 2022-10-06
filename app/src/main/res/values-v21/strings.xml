@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_a_number">Enter a number</string>
+    <string name="advanced_settings">Advanced Settings</string>
+    <string name="send">Send</string>
+</resources>

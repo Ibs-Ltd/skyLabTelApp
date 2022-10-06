@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="@drawable/border_corner_white_black"
+    android:layout_margin="30dp"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alert_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:text="Message Aleart!"
+        android:background="@drawable/border_corner_white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#D6D30A"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_body"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_centerVertical="true"
+        android:text="Note\n\nIf you salect ‘’Business Name’’ to send messages to your contacts then they will not be able to send reply back to you on these messages."
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/colorBtnText"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="OK"
+        android:id="@+id/cancel_btn"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:background="@drawable/border_corner"/>
+
+</RelativeLayout>

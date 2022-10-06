@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.activities.SkylabSendMessageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorBtnText">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/back"
+                    android:padding="5dp"
+                    android:id="@+id/back_btn"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Send Messages"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/colorText"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:background="@drawable/border_corner_white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To: "
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorBtnText"
+                    android:textSize="20sp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/et_to_number"
+                    android:inputType="phone"
+                    android:backgroundTint="@color/transparent_color"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:hint="Enter Mobile Number"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="12"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:id="@+id/et_message"
+                android:padding="15dp"
+                android:gravity="start"
+                android:textColorHint="@color/colorTextHint"
+                android:textColor="@color/colorText"
+                android:hint="Type Your Message"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/radioGroup"
+                android:orientation="vertical">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/slct_business_name"
+                    android:textSize="16sp"
+                    android:buttonTint="@color/colorBtnText"
+                    android:textColor="@color/colorText"
+                    android:text="Use Business Name"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/slct_virtual_number"
+                    android:buttonTint="@color/colorBtnText"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorText"
+                    android:text="Use Virtual Number"/>
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:id="@+id/ll_signIn_btn">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorText"
+                    android:text="@string/don_t_have_an_account"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="2dp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBtnText"
+                    android:text="@string/signup"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="30dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:text="@string/send"
+                android:id="@+id/tv_send_btn"
+                android:padding="15dp"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_corner"
+                android:layout_gravity="end|center_horizontal"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
